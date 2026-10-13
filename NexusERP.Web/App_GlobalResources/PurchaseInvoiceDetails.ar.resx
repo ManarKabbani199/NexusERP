@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DetailsTitle" xml:space="preserve">
+    <value>تفاصيل فاتورة المشتريات</value>
+  </data>
+  <data name="BackToList" xml:space="preserve">
+    <value>العودة إلى القائمة</value>
+  </data>
+  <data name="InvoiceInformation" xml:space="preserve">
+    <value>بيانات فاتورة المشتريات</value>
+  </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>رقم الفاتورة</value>
+  </data>
+  <data name="InvoiceDate" xml:space="preserve">
+    <value>تاريخ الفاتورة</value>
+  </data>
+  <data name="DueDate" xml:space="preserve">
+    <value>تاريخ الاستحقاق</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="PurchaseOrder" xml:space="preserve">
+    <value>أمر الشراء</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>المورد</value>
+  </data>
+  <data name="PostedAt" xml:space="preserve">
+    <value>تاريخ الترحيل</value>
+  </data>
+  <data name="PaidAmount" xml:space="preserve">
+    <value>المبلغ المدفوع</value>
+  </data>
+  <data name="RemainingAmount" xml:space="preserve">
+    <value>المبلغ المتبقي</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>الملاحظات</value>
+  </data>
+  <data name="CancellationInformation" xml:space="preserve">
+    <value>بيانات إلغاء الفاتورة</value>
+  </data>
+  <data name="CancelledAt" xml:space="preserve">
+    <value>تاريخ الإلغاء:</value>
+  </data>
+  <data name="CancelledBy" xml:space="preserve">
+    <value>تم الإلغاء بواسطة:</value>
+  </data>
+  <data name="CancellationReasonLabel" xml:space="preserve">
+    <value>سبب الإلغاء:</value>
+  </data>
+  <data name="InvoiceItems" xml:space="preserve">
+    <value>أصناف فاتورة المشتريات</value>
+  </data>
+  <data name="PaymentHistory" xml:space="preserve">
+    <value>سجل دفعات الفاتورة</value>
+  </data>
+  <data name="NoPayments" xml:space="preserve">
+    <value>لا توجد دفعات مسجلة لهذه الفاتورة.</value>
+  </data>
+  <data name="PaymentNumber" xml:space="preserve">
+    <value>رقم الدفعة</value>
+  </data>
+  <data name="PaymentDate" xml:space="preserve">
+    <value>تاريخ الدفعة</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>المبلغ</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>طريقة الدفع</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>ملغاة</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>فعّالة</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>الإجراءات</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>التفاصيل</value>
+  </data>
+  <data name="InvoiceTotalLabel" xml:space="preserve">
+    <value>إجمالي الفاتورة:</value>
+  </data>
+  <data name="TotalPaidLabel" xml:space="preserve">
+    <value>إجمالي المدفوع:</value>
+  </data>
+  <data name="RemainingAmountLabel" xml:space="preserve">
+    <value>المبلغ المتبقي:</value>
+  </data>
+  <data name="PostInvoice" xml:space="preserve">
+    <value>ترحيل الفاتورة</value>
+  </data>
+  <data name="MarkAsPaid" xml:space="preserve">
+    <value>تسجيل الفاتورة مدفوعة</value>
+  </data>
+  <data name="CancelInvoice" xml:space="preserve">
+    <value>إلغاء فاتورة المشتريات</value>
+  </data>
+  <data name="CreatePayment" xml:space="preserve">
+    <value>تسجيل دفعة</value>
+  </data>
+  <data name="CancellationReason" xml:space="preserve">
+    <value>سبب الإلغاء</value>
+  </data>
+  <data name="ReasonPlaceholder" xml:space="preserve">
+    <value>أدخل سبب إلغاء الفاتورة</value>
+  </data>
+  <data name="ReasonRequired" xml:space="preserve">
+    <value>سبب إلغاء الفاتورة مطلوب.</value>
+  </data>
+  <data name="ConfirmCancellation" xml:space="preserve">
+    <value>تأكيد الإلغاء</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>تراجع</value>
+  </data>
+  <data name="NoItems" xml:space="preserve">
+    <value>لا توجد أصناف في فاتورة المشتريات.</value>
+  </data>
+  <data name="ItemCode" xml:space="preserve">
+    <value>رمز الصنف</value>
+  </data>
+  <data name="ItemName" xml:space="preserve">
+    <value>اسم الصنف</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>الكمية</value>
+  </data>
+  <data name="UnitPrice" xml:space="preserve">
+    <value>سعر الوحدة</value>
+  </data>
+  <data name="LineTotal" xml:space="preserve">
+    <value>الإجمالي</value>
+  </data>
+  <data name="SubtotalLabel" xml:space="preserve">
+    <value>الإجمالي قبل الخصم:</value>
+  </data>
+  <data name="DiscountLabel" xml:space="preserve">
+    <value>الخصم:</value>
+  </data>
+  <data name="TaxLabel" xml:space="preserve">
+    <value>الضريبة:</value>
+  </data>
+  <data name="InvalidInvoiceId" xml:space="preserve">
+    <value>رقم فاتورة المشتريات غير صحيح.</value>
+  </data>
+  <data name="InvoiceNotFound" xml:space="preserve">
+    <value>فاتورة المشتريات غير موجودة.</value>
+  </data>
+  <data name="NoNotes" xml:space="preserve">
+    <value>لا توجد ملاحظات</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>نقدًا</value>
+  </data>
+  <data name="BankTransfer" xml:space="preserve">
+    <value>تحويل بنكي</value>
+  </data>
+  <data name="Cheque" xml:space="preserve">
+    <value>شيك</value>
+  </data>
+  <data name="CreditCard" xml:space="preserve">
+    <value>بطاقة ائتمانية</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>غير معروفة</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>مسودة</value>
+  </data>
+  <data name="Posted" xml:space="preserve">
+    <value>مُرحّلة</value>
+  </data>
+  <data name="Paid" xml:space="preserve">
+    <value>مدفوعة</value>
+  </data>
+  <data name="ItemNotFound" xml:space="preserve">
+    <value>صنف غير موجود</value>
+  </data>
+  <data name="PostSuccess" xml:space="preserve">
+    <value>تم ترحيل فاتورة المشتريات بنجاح.</value>
+  </data>
+  <data name="PaidSuccess" xml:space="preserve">
+    <value>تم تسجيل فاتورة المشتريات كمدفوعة بنجاح.</value>
+  </data>
+  <data name="CannotCancelPaid" xml:space="preserve">
+    <value>لا يمكن إلغاء فاتورة مدفوعة.</value>
+  </data>
+  <data name="AlreadyCancelled" xml:space="preserve">
+    <value>تم إلغاء فاتورة المشتريات مسبقًا.</value>
+  </data>
+  <data name="CannotCancelStatus" xml:space="preserve">
+    <value>لا يمكن إلغاء الفاتورة في حالتها الحالية.</value>
+  </data>
+  <data name="ReasonTooLong" xml:space="preserve">
+    <value>سبب الإلغاء لا يمكن أن يتجاوز 500 حرف.</value>
+  </data>
+  <data name="CancelSuccess" xml:space="preserve">
+    <value>تم إلغاء فاتورة المشتريات بنجاح.</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>ليس لديك صلاحية إدارة فواتير المشتريات.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>تعذر تحديد المستخدم الحالي.</value>
+  </data>
+  <data name="UserNameTooLong" xml:space="preserve">
+    <value>اسم المستخدم لا يمكن أن يتجاوز 100 حرف.</value>
+  </data>
+  <data name="ConfirmPost" xml:space="preserve">
+    <value>هل تريد ترحيل فاتورة المشتريات؟</value>
+  </data>
+  <data name="ConfirmPaid" xml:space="preserve">
+    <value>هل تريد تسجيل الفاتورة كمدفوعة؟</value>
+  </data>
+  <data name="ConfirmCancel" xml:space="preserve">
+    <value>هل أنت متأكد من إلغاء فاتورة المشتريات؟</value>
+  </data>
+  <data name="ActivePaymentsPreventCancel" xml:space="preserve">
+    <value>لا يمكن إلغاء فاتورة تحتوي على دفعات فعالة.</value>
+  </data>
+</root>

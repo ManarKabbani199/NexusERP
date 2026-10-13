@@ -1,0 +1,29 @@
+﻿# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Tt]est[Rr]esults/
+*.log
+
+# NuGet packages (restored when building)
+packages/
+*.nupkg
+
+# Local settings and publishing credentials
+*.pubxml
+*.pubxml.user
+*.publishsettings
+.env
+.env.*
+!.env.example
+
+# Local database files
+*.mdf
+*.ldf
+*.bak

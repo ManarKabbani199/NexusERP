@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37614.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusERP.Web", "NexusERP.Web\NexusERP.Web.csproj", "{1C7D74BA-64C4-40BE-98D1-29AD6A6C9B22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusERP.Domain", "NexusERP.Domain\NexusERP.Domain.csproj", "{1BB3BCF1-57F2-4B74-AEA2-C4EE59029CF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusERP.Application", "NexusERP.Application\NexusERP.Application.csproj", "{8773653C-FA93-417A-9338-1AC20CEED5A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusERP.Infrastructure", "NexusERP.Infrastructure\NexusERP.Infrastructure.csproj", "{101708F5-BBE5-4BE6-BD5B-07957C695000}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusERP.Reporting", "NexusERP.Reporting\NexusERP.Reporting.csproj", "{6A7C08DD-B049-4EAC-8AD1-2F9D9F5A2CEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusERP.Tests", "NexusERP.Tests\NexusERP.Tests.csproj", "{43E81B92-B9D6-4530-A267-F799DB399707}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C7D74BA-64C4-40BE-98D1-29AD6A6C9B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C7D74BA-64C4-40BE-98D1-29AD6A6C9B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C7D74BA-64C4-40BE-98D1-29AD6A6C9B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C7D74BA-64C4-40BE-98D1-29AD6A6C9B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB3BCF1-57F2-4B74-AEA2-C4EE59029CF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB3BCF1-57F2-4B74-AEA2-C4EE59029CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB3BCF1-57F2-4B74-AEA2-C4EE59029CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB3BCF1-57F2-4B74-AEA2-C4EE59029CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8773653C-FA93-417A-9338-1AC20CEED5A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8773653C-FA93-417A-9338-1AC20CEED5A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8773653C-FA93-417A-9338-1AC20CEED5A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8773653C-FA93-417A-9338-1AC20CEED5A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101708F5-BBE5-4BE6-BD5B-07957C695000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101708F5-BBE5-4BE6-BD5B-07957C695000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101708F5-BBE5-4BE6-BD5B-07957C695000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101708F5-BBE5-4BE6-BD5B-07957C695000}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A7C08DD-B049-4EAC-8AD1-2F9D9F5A2CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A7C08DD-B049-4EAC-8AD1-2F9D9F5A2CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A7C08DD-B049-4EAC-8AD1-2F9D9F5A2CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A7C08DD-B049-4EAC-8AD1-2F9D9F5A2CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E81B92-B9D6-4530-A267-F799DB399707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E81B92-B9D6-4530-A267-F799DB399707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E81B92-B9D6-4530-A267-F799DB399707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E81B92-B9D6-4530-A267-F799DB399707}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7B63711-0521-4DD5-8A13-E26CED6684C1}
+	EndGlobalSection
+EndGlobal

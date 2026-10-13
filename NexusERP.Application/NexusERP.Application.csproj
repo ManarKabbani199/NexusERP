@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8773653C-FA93-417A-9338-1AC20CEED5A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NexusERP.Application</RootNamespace>
+    <AssemblyName>NexusERP.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\IBranchService.cs" />
+    <Compile Include="Interfaces\ICompanyService.cs" />
+    <Compile Include="Interfaces\IDepartmentService.cs" />
+    <Compile Include="Interfaces\IEmployeeService.cs" />
+    <Compile Include="Interfaces\IGenericRepository.cs" />
+    <Compile Include="Interfaces\IItemCategoryService.cs" />
+    <Compile Include="Interfaces\IItemService.cs" />
+    <Compile Include="Interfaces\IPositionService.cs" />
+    <Compile Include="Interfaces\IPurchaseInvoiceService.cs" />
+    <Compile Include="Interfaces\IPurchaseOrderService.cs" />
+    <Compile Include="Interfaces\IPurchasePaymentService.cs" />
+    <Compile Include="Interfaces\IPurchaseReceiptService.cs" />
+    <Compile Include="Interfaces\IPurchaseReturnService.cs" />
+    <Compile Include="Interfaces\IStockMovementService.cs" />
+    <Compile Include="Interfaces\ISupplierService.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Interfaces\IWarehouseService.cs" />
+    <Compile Include="Interfaces\IWarehouseStockService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\BranchService.cs" />
+    <Compile Include="Services\CompanyService.cs" />
+    <Compile Include="Services\DepartmentService.cs" />
+    <Compile Include="Services\EmployeeService.cs" />
+    <Compile Include="Services\IItemService.cs" />
+    <Compile Include="Services\ItemCategoryService.cs" />
+    <Compile Include="Services\PositionService.cs" />
+    <Compile Include="Services\PurchaseInvoiceService.cs" />
+    <Compile Include="Services\PurchaseOrderService.cs" />
+    <Compile Include="Services\PurchasePaymentService.cs" />
+    <Compile Include="Services\PurchaseReceiptService.cs" />
+    <Compile Include="Services\PurchaseReturnService.cs" />
+    <Compile Include="Services\StockMovementService.cs" />
+    <Compile Include="Services\SupplierService.cs" />
+    <Compile Include="Services\WarehouseService.cs" />
+    <Compile Include="Services\WarehouseStockService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NexusERP.Domain\NexusERP.Domain.csproj">
+      <Project>{1bb3bcf1-57f2-4b74-aea2-c4ee59029cf4}</Project>
+      <Name>NexusERP.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Title" xml:space="preserve">
+    <value>Record supplier payment</value>
+  </data>
+  <data name="BackToInvoice" xml:space="preserve">
+    <value>Back to invoice</value>
+  </data>
+  <data name="InvoiceInformation" xml:space="preserve">
+    <value>Purchase invoice information</value>
+  </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>Invoice number</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="InvoiceTotal" xml:space="preserve">
+    <value>Invoice total</value>
+  </data>
+  <data name="PaidAmount" xml:space="preserve">
+    <value>Paid</value>
+  </data>
+  <data name="RemainingAmount" xml:space="preserve">
+    <value>Remaining</value>
+  </data>
+  <data name="PaymentInformation" xml:space="preserve">
+    <value>Payment information</value>
+  </data>
+  <data name="ValidationHeader" xml:space="preserve">
+    <value>Please correct the following errors:</value>
+  </data>
+  <data name="PaymentNumber" xml:space="preserve">
+    <value>Payment number</value>
+  </data>
+  <data name="PaymentNumberRequired" xml:space="preserve">
+    <value>Payment number is required.</value>
+  </data>
+  <data name="PaymentNumberTooLong" xml:space="preserve">
+    <value>The payment number cannot exceed 50 characters.</value>
+  </data>
+  <data name="PaymentDate" xml:space="preserve">
+    <value>Payment date</value>
+  </data>
+  <data name="PaymentDateRequired" xml:space="preserve">
+    <value>Payment date is required.</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>Payment method</value>
+  </data>
+  <data name="SelectMethod" xml:space="preserve">
+    <value>-- Select payment method --</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="BankTransfer" xml:space="preserve">
+    <value>Bank transfer</value>
+  </data>
+  <data name="Cheque" xml:space="preserve">
+    <value>Cheque</value>
+  </data>
+  <data name="CreditCard" xml:space="preserve">
+    <value>Credit card</value>
+  </data>
+  <data name="PaymentMethodRequired" xml:space="preserve">
+    <value>Payment method is required.</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Payment amount</value>
+  </data>
+  <data name="AmountRequired" xml:space="preserve">
+    <value>Payment amount is required.</value>
+  </data>
+  <data name="ReferenceNumber" xml:space="preserve">
+    <value>Reference number</value>
+  </data>
+  <data name="ReferenceTooLong" xml:space="preserve">
+    <value>The reference number cannot exceed 100 characters.</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="NotesTooLong" xml:space="preserve">
+    <value>Notes cannot exceed 500 characters.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Record payment</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ConfirmSave" xml:space="preserve">
+    <value>Do you want to record this payment?</value>
+  </data>
+  <data name="InvalidInvoiceId" xml:space="preserve">
+    <value>Invalid purchase invoice ID.</value>
+  </data>
+  <data name="InvoiceNotFound" xml:space="preserve">
+    <value>Purchase invoice not found.</value>
+  </data>
+  <data name="PostFirst" xml:space="preserve">
+    <value>Post the invoice before recording a payment.</value>
+  </data>
+  <data name="CancelledInvoice" xml:space="preserve">
+    <value>A payment cannot be recorded for a cancelled invoice.</value>
+  </data>
+  <data name="FullyPaid" xml:space="preserve">
+    <value>This purchase invoice has been paid in full.</value>
+  </data>
+  <data name="InvalidStatus" xml:space="preserve">
+    <value>A payment cannot be recorded in the invoice’s current status.</value>
+  </data>
+  <data name="InvalidAmount" xml:space="preserve">
+    <value>The payment amount is invalid.</value>
+  </data>
+  <data name="PositiveAmount" xml:space="preserve">
+    <value>The payment amount must be greater than zero.</value>
+  </data>
+  <data name="ExceedsRemaining" xml:space="preserve">
+    <value>The payment amount cannot exceed the remaining balance.</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>The payment date is invalid.</value>
+  </data>
+  <data name="InvalidMethod" xml:space="preserve">
+    <value>The payment method is invalid.</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>You do not have permission to record supplier payments.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>The current user could not be identified.</value>
+  </data>
+  <data name="UserNameTooLong" xml:space="preserve">
+    <value>The user name cannot exceed 256 characters.</value>
+  </data>
+</root>

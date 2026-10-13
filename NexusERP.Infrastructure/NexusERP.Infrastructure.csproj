@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.2\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{101708F5-BBE5-4BE6-BD5B-07957C695000}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NexusERP.Infrastructure</RootNamespace>
+    <AssemblyName>NexusERP.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.4\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.4\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\ApplicationDbContext.cs" />
+    <Compile Include="Identity\ApplicationUser.cs" />
+    <Compile Include="Migrations\202609061911137_InitialCreate.cs" />
+    <Compile Include="Migrations\202609061911137_InitialCreate.Designer.cs">
+      <DependentUpon>202609061911137_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609090551460_AddWarehouses.cs" />
+    <Compile Include="Migrations\202609090551460_AddWarehouses.Designer.cs">
+      <DependentUpon>202609090551460_AddWarehouses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609090736126_AddItemCategories.cs" />
+    <Compile Include="Migrations\202609090736126_AddItemCategories.Designer.cs">
+      <DependentUpon>202609090736126_AddItemCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609091940301_AddItems.cs" />
+    <Compile Include="Migrations\202609091940301_AddItems.Designer.cs">
+      <DependentUpon>202609091940301_AddItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609101349309_AddWarehouseStocks.cs" />
+    <Compile Include="Migrations\202609101349309_AddWarehouseStocks.Designer.cs">
+      <DependentUpon>202609101349309_AddWarehouseStocks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609101812498_AddStockMovements.cs" />
+    <Compile Include="Migrations\202609101812498_AddStockMovements.Designer.cs">
+      <DependentUpon>202609101812498_AddStockMovements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609111545014_AddStockMovementCancellation.cs" />
+    <Compile Include="Migrations\202609111545014_AddStockMovementCancellation.Designer.cs">
+      <DependentUpon>202609111545014_AddStockMovementCancellation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609130928345_AddSuppliers.cs" />
+    <Compile Include="Migrations\202609130928345_AddSuppliers.Designer.cs">
+      <DependentUpon>202609130928345_AddSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609131912091_AddPurchaseOrders.cs" />
+    <Compile Include="Migrations\202609131912091_AddPurchaseOrders.Designer.cs">
+      <DependentUpon>202609131912091_AddPurchaseOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609161239430_AddPurchaseOrderStatus.cs" />
+    <Compile Include="Migrations\202609161239430_AddPurchaseOrderStatus.Designer.cs">
+      <DependentUpon>202609161239430_AddPurchaseOrderStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609161317129_AddPurchaseReceipts.cs" />
+    <Compile Include="Migrations\202609161317129_AddPurchaseReceipts.Designer.cs">
+      <DependentUpon>202609161317129_AddPurchaseReceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609191441350_LinkStockMovementToPurchaseReceipt.cs" />
+    <Compile Include="Migrations\202609191441350_LinkStockMovementToPurchaseReceipt.Designer.cs">
+      <DependentUpon>202609191441350_LinkStockMovementToPurchaseReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609201339533_AddPurchaseReceiptCancellationDetails.cs" />
+    <Compile Include="Migrations\202609201339533_AddPurchaseReceiptCancellationDetails.Designer.cs">
+      <DependentUpon>202609201339533_AddPurchaseReceiptCancellationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609201745075_AddPurchaseOrderCancellationDetails.cs" />
+    <Compile Include="Migrations\202609201745075_AddPurchaseOrderCancellationDetails.Designer.cs">
+      <DependentUpon>202609201745075_AddPurchaseOrderCancellationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609221847018_AddPurchaseInvoices.cs" />
+    <Compile Include="Migrations\202609221847018_AddPurchaseInvoices.Designer.cs">
+      <DependentUpon>202609221847018_AddPurchaseInvoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609270632336_AddPurchaseInvoiceCancellationFields.cs" />
+    <Compile Include="Migrations\202609270632336_AddPurchaseInvoiceCancellationFields.Designer.cs">
+      <DependentUpon>202609270632336_AddPurchaseInvoiceCancellationFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609270823394_AddPurchaseReturns.cs" />
+    <Compile Include="Migrations\202609270823394_AddPurchaseReturns.Designer.cs">
+      <DependentUpon>202609270823394_AddPurchaseReturns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609270847347_AddPurchaseReturnToStockMovement.cs" />
+    <Compile Include="Migrations\202609270847347_AddPurchaseReturnToStockMovement.Designer.cs">
+      <DependentUpon>202609270847347_AddPurchaseReturnToStockMovement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202609301025573_AddUniquePurchaseReturnNumber.cs" />
+    <Compile Include="Migrations\202609301025573_AddUniquePurchaseReturnNumber.Designer.cs">
+      <DependentUpon>202609301025573_AddUniquePurchaseReturnNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202610010827335_AddPurchasePayments.cs" />
+    <Compile Include="Migrations\202610010827335_AddPurchasePayments.Designer.cs">
+      <DependentUpon>202610010827335_AddPurchasePayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202610040709080_AddPurchaseInvoiceDiscount.cs" />
+    <Compile Include="Migrations\202610040709080_AddPurchaseInvoiceDiscount.Designer.cs">
+      <DependentUpon>202610040709080_AddPurchaseInvoiceDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202610051954427_AddPurchaseReceiptUserAudit.cs" />
+    <Compile Include="Migrations\202610051954427_AddPurchaseReceiptUserAudit.Designer.cs">
+      <DependentUpon>202610051954427_AddPurchaseReceiptUserAudit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202610052155477_AddPurchaseOrderApprovalAudit.cs" />
+    <Compile Include="Migrations\202610052155477_AddPurchaseOrderApprovalAudit.Designer.cs">
+      <DependentUpon>202610052155477_AddPurchaseOrderApprovalAudit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
+    <Compile Include="Repositories\UnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NexusERP.Application\NexusERP.Application.csproj">
+      <Project>{8773653c-fa93-417a-9338-1ac20ceed5a3}</Project>
+      <Name>NexusERP.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NexusERP.Domain\NexusERP.Domain.csproj">
+      <Project>{1bb3bcf1-57f2-4b74-aea2-c4ee59029cf4}</Project>
+      <Name>NexusERP.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202609061911137_InitialCreate.resx">
+      <DependentUpon>202609061911137_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609090551460_AddWarehouses.resx">
+      <DependentUpon>202609090551460_AddWarehouses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609090736126_AddItemCategories.resx">
+      <DependentUpon>202609090736126_AddItemCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609091940301_AddItems.resx">
+      <DependentUpon>202609091940301_AddItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609101349309_AddWarehouseStocks.resx">
+      <DependentUpon>202609101349309_AddWarehouseStocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609101812498_AddStockMovements.resx">
+      <DependentUpon>202609101812498_AddStockMovements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609111545014_AddStockMovementCancellation.resx">
+      <DependentUpon>202609111545014_AddStockMovementCancellation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609130928345_AddSuppliers.resx">
+      <DependentUpon>202609130928345_AddSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609131912091_AddPurchaseOrders.resx">
+      <DependentUpon>202609131912091_AddPurchaseOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609161239430_AddPurchaseOrderStatus.resx">
+      <DependentUpon>202609161239430_AddPurchaseOrderStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609161317129_AddPurchaseReceipts.resx">
+      <DependentUpon>202609161317129_AddPurchaseReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609191441350_LinkStockMovementToPurchaseReceipt.resx">
+      <DependentUpon>202609191441350_LinkStockMovementToPurchaseReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609201339533_AddPurchaseReceiptCancellationDetails.resx">
+      <DependentUpon>202609201339533_AddPurchaseReceiptCancellationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609201745075_AddPurchaseOrderCancellationDetails.resx">
+      <DependentUpon>202609201745075_AddPurchaseOrderCancellationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609221847018_AddPurchaseInvoices.resx">
+      <DependentUpon>202609221847018_AddPurchaseInvoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609270632336_AddPurchaseInvoiceCancellationFields.resx">
+      <DependentUpon>202609270632336_AddPurchaseInvoiceCancellationFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609270823394_AddPurchaseReturns.resx">
+      <DependentUpon>202609270823394_AddPurchaseReturns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609270847347_AddPurchaseReturnToStockMovement.resx">
+      <DependentUpon>202609270847347_AddPurchaseReturnToStockMovement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202609301025573_AddUniquePurchaseReturnNumber.resx">
+      <DependentUpon>202609301025573_AddUniquePurchaseReturnNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202610010827335_AddPurchasePayments.resx">
+      <DependentUpon>202610010827335_AddPurchasePayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202610040709080_AddPurchaseInvoiceDiscount.resx">
+      <DependentUpon>202610040709080_AddPurchaseInvoiceDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202610051954427_AddPurchaseReceiptUserAudit.resx">
+      <DependentUpon>202610051954427_AddPurchaseReceiptUserAudit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202610052155477_AddPurchaseOrderApprovalAudit.resx">
+      <DependentUpon>202610052155477_AddPurchaseOrderApprovalAudit.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.2\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.2\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.2\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.targets')" />
+</Project>

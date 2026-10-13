@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Title" xml:space="preserve">
+    <value>إنشاء فاتورة مشتريات</value>
+  </data>
+  <data name="BackToList" xml:space="preserve">
+    <value>العودة إلى القائمة</value>
+  </data>
+  <data name="ValidationHeader" xml:space="preserve">
+    <value>يرجى تصحيح الأخطاء التالية:</value>
+  </data>
+  <data name="InvoiceInformation" xml:space="preserve">
+    <value>بيانات الفاتورة</value>
+  </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>رقم الفاتورة</value>
+  </data>
+  <data name="InvoiceNumberRequired" xml:space="preserve">
+    <value>رقم الفاتورة مطلوب.</value>
+  </data>
+  <data name="InvoiceDate" xml:space="preserve">
+    <value>تاريخ الفاتورة</value>
+  </data>
+  <data name="InvoiceDateRequired" xml:space="preserve">
+    <value>تاريخ الفاتورة مطلوب.</value>
+  </data>
+  <data name="DueDate" xml:space="preserve">
+    <value>تاريخ الاستحقاق</value>
+  </data>
+  <data name="PurchaseOrder" xml:space="preserve">
+    <value>أمر الشراء</value>
+  </data>
+  <data name="SelectPurchaseOrder" xml:space="preserve">
+    <value>-- اختاري أمر الشراء --</value>
+  </data>
+  <data name="PurchaseOrderRequired" xml:space="preserve">
+    <value>يجب اختيار أمر الشراء.</value>
+  </data>
+  <data name="PurchaseOrderNotFound" xml:space="preserve">
+    <value>أمر الشراء غير موجود.</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>المورد</value>
+  </data>
+  <data name="DiscountAmount" xml:space="preserve">
+    <value>مبلغ الخصم</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>الملاحظات</value>
+  </data>
+  <data name="InvoiceItems" xml:space="preserve">
+    <value>أصناف الفاتورة</value>
+  </data>
+  <data name="NoAvailableItems" xml:space="preserve">
+    <value>لا توجد كميات مستلمة متاحة للفوترة.</value>
+  </data>
+  <data name="ItemCode" xml:space="preserve">
+    <value>رمز الصنف</value>
+  </data>
+  <data name="ItemName" xml:space="preserve">
+    <value>اسم الصنف</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>المستلم</value>
+  </data>
+  <data name="PreviouslyInvoiced" xml:space="preserve">
+    <value>المفوتر سابقًا</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>المتاح للفوترة</value>
+  </data>
+  <data name="InvoiceQuantity" xml:space="preserve">
+    <value>كمية الفاتورة</value>
+  </data>
+  <data name="UnitPrice" xml:space="preserve">
+    <value>سعر الوحدة</value>
+  </data>
+  <data name="TaxRate" xml:space="preserve">
+    <value>الضريبة %</value>
+  </data>
+  <data name="SaveDraft" xml:space="preserve">
+    <value>حفظ الفاتورة كمسودة</value>
+  </data>
+  <data name="ItemNotFound" xml:space="preserve">
+    <value>صنف غير موجود</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>ليس لديك صلاحية إنشاء فواتير المشتريات.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>تعذر تحديد المستخدم الحالي.</value>
+  </data>
+  <data name="UserNameTooLong" xml:space="preserve">
+    <value>اسم المستخدم لا يمكن أن يتجاوز 256 حرفًا.</value>
+  </data>
+  <data name="InvoiceNumberMissing" xml:space="preserve">
+    <value>يجب إدخال رقم فاتورة المشتريات.</value>
+  </data>
+  <data name="InvalidSupplier" xml:space="preserve">
+    <value>المورد المرتبط بأمر الشراء غير صحيح.</value>
+  </data>
+  <data name="InvalidInvoiceDate" xml:space="preserve">
+    <value>تاريخ الفاتورة غير صحيح.</value>
+  </data>
+  <data name="InvalidDueDate" xml:space="preserve">
+    <value>تاريخ الاستحقاق غير صحيح.</value>
+  </data>
+  <data name="DueDateBeforeInvoice" xml:space="preserve">
+    <value>تاريخ الاستحقاق لا يمكن أن يكون قبل تاريخ الفاتورة.</value>
+  </data>
+  <data name="InvalidDiscount" xml:space="preserve">
+    <value>مبلغ الخصم غير صحيح.</value>
+  </data>
+  <data name="NegativeDiscount" xml:space="preserve">
+    <value>مبلغ الخصم لا يمكن أن يكون سالبًا.</value>
+  </data>
+  <data name="InvalidUnitPrice" xml:space="preserve">
+    <value>سعر الوحدة غير صحيح.</value>
+  </data>
+  <data name="NegativeUnitPrice" xml:space="preserve">
+    <value>سعر الوحدة لا يمكن أن يكون سالبًا.</value>
+  </data>
+  <data name="InvalidTax" xml:space="preserve">
+    <value>نسبة الضريبة غير صحيحة.</value>
+  </data>
+  <data name="TaxOutOfRange" xml:space="preserve">
+    <value>نسبة الضريبة يجب أن تكون بين 0 و100.</value>
+  </data>
+  <data name="OneItemRequired" xml:space="preserve">
+    <value>يجب إدخال كمية لصنف واحد على الأقل.</value>
+  </data>
+  <data name="DiscountExceedsSubtotal" xml:space="preserve">
+    <value>مبلغ الخصم لا يمكن أن يكون أكبر من إجمالي الفاتورة قبل الضريبة.</value>
+  </data>
+</root>

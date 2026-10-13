@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Title" xml:space="preserve">
+    <value>أوامر الشراء</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>إضافة أمر شراء</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>قائمة أوامر الشراء</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>لا توجد أوامر شراء حتى الآن.</value>
+  </data>
+  <data name="OrderNumber" xml:space="preserve">
+    <value>رقم أمر الشراء</value>
+  </data>
+  <data name="OrderDate" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>المورد</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="ItemsCount" xml:space="preserve">
+    <value>عدد الأصناف</value>
+  </data>
+  <data name="GrandTotal" xml:space="preserve">
+    <value>الإجمالي</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>الإجراءات</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>التفاصيل</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>هل تريد حذف أمر الشراء؟</value>
+  </data>
+  <data name="CreatedSuccess" xml:space="preserve">
+    <value>تم إنشاء أمر الشراء بنجاح.</value>
+  </data>
+  <data name="DeletedSuccess" xml:space="preserve">
+    <value>تم حذف أمر الشراء بنجاح.</value>
+  </data>
+  <data name="InvalidId" xml:space="preserve">
+    <value>رقم أمر الشراء غير صحيح.</value>
+  </data>
+  <data name="Unspecified" xml:space="preserve">
+    <value>غير محدد</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>مسودة</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>معتمد</value>
+  </data>
+  <data name="PartiallyReceived" xml:space="preserve">
+    <value>مستلم جزئيًا</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>مستلم بالكامل</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>ملغي</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>غير معروف</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>ليس لديك صلاحية حذف أوامر الشراء.</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>أمر الشراء غير موجود.</value>
+  </data>
+  <data name="DraftOnly" xml:space="preserve">
+    <value>يمكن حذف أمر الشراء المسودة فقط.</value>
+  </data>
+</root>

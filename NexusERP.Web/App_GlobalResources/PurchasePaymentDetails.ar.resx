@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Title" xml:space="preserve">
+    <value>تفاصيل دفعة المورد</value>
+  </data>
+  <data name="BackToList" xml:space="preserve">
+    <value>العودة إلى قائمة الدفعات</value>
+  </data>
+  <data name="PaymentInformation" xml:space="preserve">
+    <value>بيانات الدفعة</value>
+  </data>
+  <data name="PaymentNumber" xml:space="preserve">
+    <value>رقم الدفعة</value>
+  </data>
+  <data name="PaymentDate" xml:space="preserve">
+    <value>تاريخ الدفعة</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>المبلغ</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="PurchaseInvoice" xml:space="preserve">
+    <value>فاتورة المشتريات</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>المورد</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>طريقة الدفع</value>
+  </data>
+  <data name="ReferenceNumber" xml:space="preserve">
+    <value>الرقم المرجعي</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>تم الإنشاء بواسطة</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>الملاحظات</value>
+  </data>
+  <data name="CancellationInformation" xml:space="preserve">
+    <value>بيانات إلغاء الدفعة</value>
+  </data>
+  <data name="CancelledAt" xml:space="preserve">
+    <value>تاريخ الإلغاء:</value>
+  </data>
+  <data name="CancelledBy" xml:space="preserve">
+    <value>تم الإلغاء بواسطة:</value>
+  </data>
+  <data name="CancellationReasonLabel" xml:space="preserve">
+    <value>سبب الإلغاء:</value>
+  </data>
+  <data name="CancelPayment" xml:space="preserve">
+    <value>إلغاء الدفعة</value>
+  </data>
+  <data name="CancellationReason" xml:space="preserve">
+    <value>سبب الإلغاء</value>
+  </data>
+  <data name="ReasonRequired" xml:space="preserve">
+    <value>سبب إلغاء الدفعة مطلوب.</value>
+  </data>
+  <data name="ReasonTooLong" xml:space="preserve">
+    <value>سبب الإلغاء لا يمكن أن يتجاوز 500 حرف.</value>
+  </data>
+  <data name="ConfirmCancellation" xml:space="preserve">
+    <value>تأكيد الإلغاء</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>تراجع</value>
+  </data>
+  <data name="ConfirmCancel" xml:space="preserve">
+    <value>هل أنت متأكد من إلغاء الدفعة؟</value>
+  </data>
+  <data name="CreatedSuccess" xml:space="preserve">
+    <value>تم تسجيل الدفعة بنجاح.</value>
+  </data>
+  <data name="CancelledSuccess" xml:space="preserve">
+    <value>تم إلغاء الدفعة بنجاح.</value>
+  </data>
+  <data name="InvalidId" xml:space="preserve">
+    <value>رقم الدفعة غير صحيح.</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>الدفعة غير موجودة.</value>
+  </data>
+  <data name="NoNotes" xml:space="preserve">
+    <value>لا توجد ملاحظات</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>ملغاة</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>فعّالة</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>نقدًا</value>
+  </data>
+  <data name="BankTransfer" xml:space="preserve">
+    <value>تحويل بنكي</value>
+  </data>
+  <data name="Cheque" xml:space="preserve">
+    <value>شيك</value>
+  </data>
+  <data name="CreditCard" xml:space="preserve">
+    <value>بطاقة ائتمانية</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>غير معروفة</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>ليس لديك صلاحية إلغاء دفعات الموردين.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>تعذر تحديد المستخدم الحالي.</value>
+  </data>
+  <data name="UserNameTooLong" xml:space="preserve">
+    <value>اسم المستخدم لا يمكن أن يتجاوز 256 حرفًا.</value>
+  </data>
+  <data name="AlreadyCancelled" xml:space="preserve">
+    <value>تم إلغاء الدفعة مسبقًا.</value>
+  </data>
+</root>

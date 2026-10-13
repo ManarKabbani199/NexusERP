@@ -1,0 +1,529 @@
+﻿<%@ Master Language="C#"
+    AutoEventWireup="true"
+    CodeBehind="Site.master.cs"
+    Inherits="NexusERP.Web.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="<%= InterfaceLanguage %>"
+      dir="<%= InterfaceDirection %>">
+
+<head runat="server">
+    <meta charset="utf-8" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+
+    <title><%: Page.Title %> - NexusERP</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference
+        runat="server"
+        Path="~/Content/css" />
+
+    <link runat="server"
+          href="~/favicon.ico"
+          rel="shortcut icon"
+          type="image/x-icon" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f3f6fb;
+            color: #25324a;
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+        }
+
+        .erp-shell {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .erp-sidebar {
+            width: 260px;
+            flex-shrink: 0;
+            background: #14243c;
+            color: #fff;
+            padding: 26px 16px;
+        }
+
+        .erp-brand {
+            display: block;
+            padding: 0 12px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .erp-brand:hover {
+            color: #fff;
+        }
+
+        .erp-description {
+            margin: 8px 12px 28px;
+            color: #b8c7db;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .erp-navigation a {
+            display: block;
+            margin: 4px 0;
+            padding: 11px 14px;
+            border-radius: 8px;
+            color: #dce6f3;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .erp-navigation a:hover,
+        .erp-navigation a:focus-visible {
+            background: #263c59;
+            color: #fff;
+        }
+
+        .erp-menu-group {
+            margin-top: 14px;
+        }
+
+        .erp-menu-group summary {
+            padding: 10px 14px;
+            cursor: pointer;
+            color: #95b9e9;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .erp-menu-group a {
+            margin-inline-start: 12px;
+        }
+
+        .erp-main {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .erp-topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 18px 28px;
+            background: #fff;
+            border-bottom: 1px solid #e3e9f2;
+        }
+
+        .erp-page-title {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: #14243c;
+        }
+
+        .erp-topbar-actions,
+        .erp-account,
+        .erp-language {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .erp-account a {
+            color: #334866;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .erp-account a:hover {
+            color: #2563eb;
+        }
+
+        .erp-language {
+            padding: 5px;
+            border: 1px solid #dce5f0;
+            border-radius: 9px;
+            gap: 4px;
+        }
+
+        .erp-language a {
+            padding: 6px 10px;
+            border-radius: 6px;
+            color: #334866;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .erp-language a:hover,
+        .erp-language a[aria-current="true"] {
+            background: #eaf1ff;
+            color: #1d4ed8;
+        }
+
+        .erp-content {
+            flex: 1;
+            padding: 28px;
+        }
+
+        .erp-content-surface {
+            padding: 24px;
+            background: #fff;
+            border: 1px solid #e3e9f2;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(20, 36, 60, 0.04);
+        }
+
+        .erp-footer {
+            padding: 18px 28px;
+            color: #6b7c93;
+            font-size: 13px;
+            border-top: 1px solid #e3e9f2;
+        }
+
+        @media (max-width: 900px) {
+            .erp-shell {
+                flex-direction: column;
+            }
+
+            .erp-sidebar {
+                width: 100%;
+                padding: 18px 16px;
+            }
+
+            .erp-description {
+                margin-bottom: 14px;
+            }
+
+            .erp-topbar,
+            .erp-content,
+            .erp-footer {
+                padding: 18px;
+            }
+
+            .erp-content-surface {
+                padding: 16px;
+            }
+        }
+
+        @media print {
+            .erp-sidebar,
+            .erp-topbar,
+            .erp-footer {
+                display: none;
+            }
+
+            .erp-content,
+            .erp-content-surface {
+                padding: 0;
+                border: 0;
+                box-shadow: none;
+            }
+
+            body {
+                background: #fff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+
+                <asp:ScriptReference
+                    Name="WebForms.js"
+                    Assembly="System.Web"
+                    Path="~/Scripts/WebForms/WebForms.js" />
+
+                <asp:ScriptReference
+                    Name="WebUIValidation.js"
+                    Assembly="System.Web"
+                    Path="~/Scripts/WebForms/WebUIValidation.js" />
+
+                <asp:ScriptReference
+                    Name="MenuStandards.js"
+                    Assembly="System.Web"
+                    Path="~/Scripts/WebForms/MenuStandards.js" />
+
+                <asp:ScriptReference
+                    Name="GridView.js"
+                    Assembly="System.Web"
+                    Path="~/Scripts/WebForms/GridView.js" />
+
+                <asp:ScriptReference
+                    Name="DetailsView.js"
+                    Assembly="System.Web"
+                    Path="~/Scripts/WebForms/DetailsView.js" />
+
+                <asp:ScriptReference
+                    Name="TreeView.js"
+                    Assembly="System.Web"
+                    Path="~/Scripts/WebForms/TreeView.js" />
+
+                <asp:ScriptReference
+                    Name="WebParts.js"
+                    Assembly="System.Web"
+                    Path="~/Scripts/WebForms/WebParts.js" />
+
+                <asp:ScriptReference
+                    Name="Focus.js"
+                    Assembly="System.Web"
+                    Path="~/Scripts/WebForms/Focus.js" />
+
+                <asp:ScriptReference Name="WebFormsBundle" />
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="erp-shell">
+
+            <aside class="erp-sidebar">
+                <a class="erp-brand"
+                   runat="server"
+                   href="~/">
+                    NexusERP
+                </a>
+
+                <p class="erp-description">
+                    <%: Translate("AppDescription") %>
+                </p>
+
+                <nav class="erp-navigation">
+                    <a runat="server" href="~/">
+                        <%: Translate("Home") %>
+                    </a>
+
+                    <% if (Context.User.IsInRole("Admin")) { %>
+
+                    <details class="erp-menu-group" open>
+                        <summary>
+                            <%: Translate("Organization") %>
+                        </summary>
+
+                        <a runat="server"
+                           href="~/Companies/Index.aspx">
+                            <%: Translate("Companies") %>
+                        </a>
+
+                        <a runat="server"
+                           href="~/Branches/Index.aspx">
+                            <%: Translate("Branches") %>
+                        </a>
+
+                        <a runat="server"
+                           href="~/Departments/Index.aspx">
+                            <%: Translate("Departments") %>
+                        </a>
+
+                        <a runat="server"
+                           href="~/Positions/Index.aspx">
+                            <%: Translate("Positions") %>
+                        </a>
+
+                        <a runat="server"
+                           href="~/Employees/Index.aspx">
+                            <%: Translate("Employees") %>
+                        </a>
+
+                        <a runat="server"
+                           href="~/Account/Register">
+                            <%: Translate("CreateAccount") %>
+                        </a>
+                    </details>
+
+                    <% } %>
+
+                    <% if (Context.User.IsInRole("Admin")
+                        || Context.User.IsInRole("WarehouseManager")) { %>
+
+                    <details class="erp-menu-group" open>
+                        <summary>
+                            <%: Translate("Inventory") %>
+                        </summary>
+
+                        <a runat="server"
+                           href="~/Warehouses/Index.aspx">
+                            <%: Translate("Warehouses") %>
+                        </a>
+
+                        <a runat="server"
+                           href="~/ItemCategories/Index.aspx">
+                            <%: Translate("ItemCategories") %>
+                        </a>
+
+                        <a runat="server"
+                           href="~/Items/Index.aspx">
+                            <%: Translate("Items") %>
+                        </a>
+
+                        <a runat="server"
+                           href="~/WarehouseStocks/Index.aspx">
+                            <%: Translate("WarehouseStocks") %>
+                        </a>
+
+                        <a runat="server"
+                           href="~/StockMovements/Index.aspx">
+                            <%: Translate("StockMovements") %>
+                        </a>
+
+                        <a runat="server"
+                           href="~/PurchaseReceipts/Index.aspx">
+                            <%: Translate("PurchaseReceipts") %>
+                        </a>
+                    </details>
+
+                    <% } %>
+
+                    <% if (Context.User.IsInRole("Admin")
+                        || Context.User.IsInRole("PurchasingManager")
+                        || Context.User.IsInRole("WarehouseManager")) { %>
+
+                    <details class="erp-menu-group" open>
+                        <summary>
+                            <%: Translate("Purchasing") %>
+                        </summary>
+
+                        <% if (Context.User.IsInRole("Admin")
+                            || Context.User.IsInRole("PurchasingManager")) { %>
+
+                        <a runat="server"
+                           href="~/Suppliers/Index.aspx">
+                            <%: Translate("Suppliers") %>
+                        </a>
+
+                        <a runat="server"
+                           href="~/PurchaseOrders/Index.aspx">
+                            <%: Translate("PurchaseOrders") %>
+                        </a>
+
+                        <% } %>
+
+                        <a runat="server"
+                           href="~/PurchaseReturns/Index.aspx">
+                            <%: Translate("PurchaseReturns") %>
+                        </a>
+                    </details>
+
+                    <% } %>
+
+                    <% if (Context.User.IsInRole("Admin")
+                        || Context.User.IsInRole("Accountant")) { %>
+
+                    <details class="erp-menu-group" open>
+                        <summary>
+                            <%: Translate("Accounting") %>
+                        </summary>
+
+                        <a runat="server"
+                           href="~/PurchaseInvoices/Index.aspx">
+                            <%: Translate("PurchaseInvoices") %>
+                        </a>
+
+                        <a runat="server"
+                           href="~/PurchasePayments/Index.aspx">
+                            <%: Translate("PurchasePayments") %>
+                        </a>
+                    </details>
+
+                    <% } %>
+                </nav>
+            </aside>
+
+            <div class="erp-main">
+
+                <header class="erp-topbar">
+                    <h1 class="erp-page-title">
+                        <%: Page.Title %>
+                    </h1>
+
+                    <div class="erp-topbar-actions">
+
+                        <div class="erp-language">
+                            <asp:LinkButton
+                                runat="server"
+                                Text="العربية"
+                                CommandArgument="ar"
+                                CausesValidation="false"
+                                OnClick="ChangeLanguage_Click"
+                                aria-label="العربية" />
+
+                            <asp:LinkButton
+                                runat="server"
+                                Text="English"
+                                CommandArgument="en"
+                                CausesValidation="false"
+                                OnClick="ChangeLanguage_Click"
+                                aria-label="English" />
+                        </div>
+
+                        <asp:LoginView
+                            runat="server"
+                            ViewStateMode="Disabled">
+
+                            <AnonymousTemplate>
+                                <div class="erp-account">
+                                    <a runat="server"
+                                       href="~/Account/Login">
+                                        <%: Translate("Login") %>
+                                    </a>
+                                </div>
+                            </AnonymousTemplate>
+
+                            <LoggedInTemplate>
+                                <div class="erp-account">
+                                    <a runat="server"
+                                       href="~/Account/Manage">
+                                        <%: Translate("Welcome") %>،
+                                        <bdi>
+                                            <%: Context.User.Identity.Name %>
+                                        </bdi>
+                                    </a>
+
+                                    <asp:LoginStatus
+                                        runat="server"
+                                        LogoutAction="Redirect"
+                                        LogoutText="<%$ Resources:Site, Logout %>"
+                                        LogoutPageUrl="~/"
+                                        OnLoggingOut="Unnamed_LoggingOut" />
+                                </div>
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+
+                    </div>
+                </header>
+
+                <main class="erp-content">
+                    <div class="erp-content-surface">
+                        <asp:ContentPlaceHolder
+                            ID="MainContent"
+                            runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </main>
+
+                <footer class="erp-footer">
+                    &copy; <%: DateTime.Now.Year %>
+                    — NexusERP —
+                    <%: Translate("AllRightsReserved") %>
+                </footer>
+
+            </div>
+        </div>
+    </form>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+</body>
+</html>

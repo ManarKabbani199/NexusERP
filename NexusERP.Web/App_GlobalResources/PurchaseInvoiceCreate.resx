@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Title" xml:space="preserve">
+    <value>Create purchase invoice</value>
+  </data>
+  <data name="BackToList" xml:space="preserve">
+    <value>Back to list</value>
+  </data>
+  <data name="ValidationHeader" xml:space="preserve">
+    <value>Please correct the following errors:</value>
+  </data>
+  <data name="InvoiceInformation" xml:space="preserve">
+    <value>Invoice information</value>
+  </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>Invoice number</value>
+  </data>
+  <data name="InvoiceNumberRequired" xml:space="preserve">
+    <value>Invoice number is required.</value>
+  </data>
+  <data name="InvoiceDate" xml:space="preserve">
+    <value>Invoice date</value>
+  </data>
+  <data name="InvoiceDateRequired" xml:space="preserve">
+    <value>Invoice date is required.</value>
+  </data>
+  <data name="DueDate" xml:space="preserve">
+    <value>Due date</value>
+  </data>
+  <data name="PurchaseOrder" xml:space="preserve">
+    <value>Purchase order</value>
+  </data>
+  <data name="SelectPurchaseOrder" xml:space="preserve">
+    <value>-- Select purchase order --</value>
+  </data>
+  <data name="PurchaseOrderRequired" xml:space="preserve">
+    <value>Select a purchase order.</value>
+  </data>
+  <data name="PurchaseOrderNotFound" xml:space="preserve">
+    <value>Purchase order not found.</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="DiscountAmount" xml:space="preserve">
+    <value>Discount amount</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="InvoiceItems" xml:space="preserve">
+    <value>Invoice items</value>
+  </data>
+  <data name="NoAvailableItems" xml:space="preserve">
+    <value>No received quantities are available for invoicing.</value>
+  </data>
+  <data name="ItemCode" xml:space="preserve">
+    <value>Item code</value>
+  </data>
+  <data name="ItemName" xml:space="preserve">
+    <value>Item name</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="PreviouslyInvoiced" xml:space="preserve">
+    <value>Previously invoiced</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Available to invoice</value>
+  </data>
+  <data name="InvoiceQuantity" xml:space="preserve">
+    <value>Invoice quantity</value>
+  </data>
+  <data name="UnitPrice" xml:space="preserve">
+    <value>Unit price</value>
+  </data>
+  <data name="TaxRate" xml:space="preserve">
+    <value>Tax %</value>
+  </data>
+  <data name="SaveDraft" xml:space="preserve">
+    <value>Save invoice as draft</value>
+  </data>
+  <data name="ItemNotFound" xml:space="preserve">
+    <value>Item not found</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>You do not have permission to create purchase invoices.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>The current user could not be identified.</value>
+  </data>
+  <data name="UserNameTooLong" xml:space="preserve">
+    <value>The user name cannot exceed 256 characters.</value>
+  </data>
+  <data name="InvoiceNumberMissing" xml:space="preserve">
+    <value>Enter the purchase invoice number.</value>
+  </data>
+  <data name="InvalidSupplier" xml:space="preserve">
+    <value>The supplier linked to the purchase order is invalid.</value>
+  </data>
+  <data name="InvalidInvoiceDate" xml:space="preserve">
+    <value>The invoice date is invalid.</value>
+  </data>
+  <data name="InvalidDueDate" xml:space="preserve">
+    <value>The due date is invalid.</value>
+  </data>
+  <data name="DueDateBeforeInvoice" xml:space="preserve">
+    <value>The due date cannot be earlier than the invoice date.</value>
+  </data>
+  <data name="InvalidDiscount" xml:space="preserve">
+    <value>The discount amount is invalid.</value>
+  </data>
+  <data name="NegativeDiscount" xml:space="preserve">
+    <value>The discount amount cannot be negative.</value>
+  </data>
+  <data name="InvalidUnitPrice" xml:space="preserve">
+    <value>The unit price is invalid.</value>
+  </data>
+  <data name="NegativeUnitPrice" xml:space="preserve">
+    <value>The unit price cannot be negative.</value>
+  </data>
+  <data name="InvalidTax" xml:space="preserve">
+    <value>The tax rate is invalid.</value>
+  </data>
+  <data name="TaxOutOfRange" xml:space="preserve">
+    <value>The tax rate must be between 0 and 100.</value>
+  </data>
+  <data name="OneItemRequired" xml:space="preserve">
+    <value>Enter a quantity for at least one item.</value>
+  </data>
+  <data name="DiscountExceedsSubtotal" xml:space="preserve">
+    <value>The discount cannot exceed the invoice subtotal before tax.</value>
+  </data>
+</root>

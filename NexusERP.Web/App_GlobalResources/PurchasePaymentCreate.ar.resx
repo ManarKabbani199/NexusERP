@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Title" xml:space="preserve">
+    <value>تسجيل دفعة مورد</value>
+  </data>
+  <data name="BackToInvoice" xml:space="preserve">
+    <value>العودة إلى الفاتورة</value>
+  </data>
+  <data name="InvoiceInformation" xml:space="preserve">
+    <value>بيانات فاتورة المشتريات</value>
+  </data>
+  <data name="InvoiceNumber" xml:space="preserve">
+    <value>رقم الفاتورة</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>المورد</value>
+  </data>
+  <data name="InvoiceTotal" xml:space="preserve">
+    <value>إجمالي الفاتورة</value>
+  </data>
+  <data name="PaidAmount" xml:space="preserve">
+    <value>المدفوع</value>
+  </data>
+  <data name="RemainingAmount" xml:space="preserve">
+    <value>المتبقي</value>
+  </data>
+  <data name="PaymentInformation" xml:space="preserve">
+    <value>بيانات الدفعة</value>
+  </data>
+  <data name="ValidationHeader" xml:space="preserve">
+    <value>يرجى تصحيح الأخطاء التالية:</value>
+  </data>
+  <data name="PaymentNumber" xml:space="preserve">
+    <value>رقم الدفعة</value>
+  </data>
+  <data name="PaymentNumberRequired" xml:space="preserve">
+    <value>رقم الدفعة مطلوب.</value>
+  </data>
+  <data name="PaymentNumberTooLong" xml:space="preserve">
+    <value>رقم الدفعة لا يمكن أن يتجاوز 50 حرفًا.</value>
+  </data>
+  <data name="PaymentDate" xml:space="preserve">
+    <value>تاريخ الدفعة</value>
+  </data>
+  <data name="PaymentDateRequired" xml:space="preserve">
+    <value>تاريخ الدفعة مطلوب.</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>طريقة الدفع</value>
+  </data>
+  <data name="SelectMethod" xml:space="preserve">
+    <value>-- اختر طريقة الدفع --</value>
+  </data>
+  <data name="Cash" xml:space="preserve">
+    <value>نقدًا</value>
+  </data>
+  <data name="BankTransfer" xml:space="preserve">
+    <value>تحويل بنكي</value>
+  </data>
+  <data name="Cheque" xml:space="preserve">
+    <value>شيك</value>
+  </data>
+  <data name="CreditCard" xml:space="preserve">
+    <value>بطاقة ائتمانية</value>
+  </data>
+  <data name="PaymentMethodRequired" xml:space="preserve">
+    <value>طريقة الدفع مطلوبة.</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>مبلغ الدفعة</value>
+  </data>
+  <data name="AmountRequired" xml:space="preserve">
+    <value>مبلغ الدفعة مطلوب.</value>
+  </data>
+  <data name="ReferenceNumber" xml:space="preserve">
+    <value>الرقم المرجعي</value>
+  </data>
+  <data name="ReferenceTooLong" xml:space="preserve">
+    <value>الرقم المرجعي لا يمكن أن يتجاوز 100 حرف.</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>الملاحظات</value>
+  </data>
+  <data name="NotesTooLong" xml:space="preserve">
+    <value>الملاحظات لا يمكن أن تتجاوز 500 حرف.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>تسجيل الدفعة</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="ConfirmSave" xml:space="preserve">
+    <value>هل تريد تسجيل هذه الدفعة؟</value>
+  </data>
+  <data name="InvalidInvoiceId" xml:space="preserve">
+    <value>رقم فاتورة المشتريات غير صحيح.</value>
+  </data>
+  <data name="InvoiceNotFound" xml:space="preserve">
+    <value>فاتورة المشتريات غير موجودة.</value>
+  </data>
+  <data name="PostFirst" xml:space="preserve">
+    <value>يجب ترحيل الفاتورة قبل تسجيل دفعة.</value>
+  </data>
+  <data name="CancelledInvoice" xml:space="preserve">
+    <value>لا يمكن تسجيل دفعة لفاتورة ملغاة.</value>
+  </data>
+  <data name="FullyPaid" xml:space="preserve">
+    <value>تم دفع فاتورة المشتريات بالكامل.</value>
+  </data>
+  <data name="InvalidStatus" xml:space="preserve">
+    <value>لا يمكن تسجيل دفعة للفاتورة في حالتها الحالية.</value>
+  </data>
+  <data name="InvalidAmount" xml:space="preserve">
+    <value>مبلغ الدفعة غير صحيح.</value>
+  </data>
+  <data name="PositiveAmount" xml:space="preserve">
+    <value>مبلغ الدفعة يجب أن يكون أكبر من صفر.</value>
+  </data>
+  <data name="ExceedsRemaining" xml:space="preserve">
+    <value>مبلغ الدفعة لا يمكن أن يتجاوز المبلغ المتبقي.</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>تاريخ الدفعة غير صحيح.</value>
+  </data>
+  <data name="InvalidMethod" xml:space="preserve">
+    <value>طريقة الدفع غير صحيحة.</value>
+  </data>
+  <data name="NotAuthorized" xml:space="preserve">
+    <value>ليس لديك صلاحية تسجيل دفعات الموردين.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>تعذر تحديد المستخدم الحالي.</value>
+  </data>
+  <data name="UserNameTooLong" xml:space="preserve">
+    <value>اسم المستخدم لا يمكن أن يتجاوز 256 حرفًا.</value>
+  </data>
+</root>
